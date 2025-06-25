@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервис заказов WB Level 0</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Сервис заказов WB Level 0</h1>
+        
+        <div class="search-section">
+            <h2>Поиск заказа</h2>
+            <div class="search-form">
+                <input type="text" id="orderUID" placeholder="Введите ID заказа (order_uid)" />
+                <button onclick="searchOrder()">Найти заказ</button>
+            </div>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            Загрузка...
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="orderResult" class="order-result" style="display: none;">
+            <h2>Информация о заказе</h2>
+            <div id="orderData"></div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

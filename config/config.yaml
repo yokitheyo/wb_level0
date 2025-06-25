@@ -1,0 +1,16 @@
+server:
+  port: "8081"
+
+database:
+  host: "localhost"
+  port: "5432"
+  user: "orders_user"
+  password: "orders_pass"
+  dbname: "orders_service"
+  sslmode: "disable"
+
+kafka:
+  brokers:
+    - "localhost:9092"
+  topic: "orders"
+  groupid: "orders-service"
