@@ -53,8 +53,5 @@ migrate-up:
 db-connect:
 	docker exec -it orders-postgres psql -U orders_user -d orders_service
 
-kafka-ui:
-	@echo "Kafka UI доступен по адресу: http://localhost:8080"
-
 create-topic:
 	docker exec orders-kafka kafka-topics --bootstrap-server localhost:9092 --create --topic orders --partitions 1 --replication-factor 1 --if-not-exists
